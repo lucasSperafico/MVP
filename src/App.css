@@ -1,0 +1,50 @@
+/* App.css */
+
+/* ===== Tema padrão ===== */
+:root {
+  --bg-page: #ffffff;
+  --bg-card: #ebebec;
+  --border: #cccccd;
+  --text: #222222;
+  --text-muted: #888888;
+  --input-bg: #ffffff;
+  --input-border: #767676;
+  --slider-track: #4b4b4b;
+  --header-link: #333333;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --bar-bg: #2a2a2a;
+  --thumb-bg: #ffffff;
+  --thumb-border: #767676;
+  --green-components: #2ea32e;
+}
+
+/* ===== Tema escuro ===== */
+[data-theme="dark"] {
+  color-scheme: dark; /* calendário, scrollbar e select nativos no modo escuro */
+  --bg-page: #121212;
+  --bg-card: #1e1e1e;
+  --border: #333333;
+  --text: #eeeeee;
+  --text-muted: #aaaaaa;
+  --input-bg: #2a2a2a;
+  --input-border: #555555;
+  --slider-track: #888888;
+  --header-link: #dddddd;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --bar-bg: #3a3a3a;
+  --thumb-bg: #2a2a2a;
+  --thumb-border: #888888;
+}
+
+/* ===== Estilos globais ===== */
+body {
+  font-family: Arial;
+  font-size: 13px;
+  background-color: var(--bg-page);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-content {
+  padding-top: 60px; /* altura do header fixo */
+}
